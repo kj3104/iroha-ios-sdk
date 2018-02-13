@@ -11,6 +11,12 @@
 		6D2549382032CC830088028C /* IrohaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549372032CC830088028C /* IrohaSwiftTests.swift */; };
 		6D25493A2032CC830088028C /* IrohaSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25492C2032CC830088028C /* IrohaSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D2549442032CD720088028C /* IrohaSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549432032CD720088028C /* IrohaSwift.swift */; };
+		6D25494C2032D67B0088028C /* commands.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549462032D67A0088028C /* commands.pb.swift */; };
+		6D25494D2032D67B0088028C /* primitive.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549472032D67A0088028C /* primitive.pb.swift */; };
+		6D25494E2032D67B0088028C /* endpoint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549482032D67A0088028C /* endpoint.pb.swift */; };
+		6D25494F2032D67B0088028C /* responses.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2549492032D67B0088028C /* responses.pb.swift */; };
+		6D2549502032D67B0088028C /* queries.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25494A2032D67B0088028C /* queries.pb.swift */; };
+		6D2549512032D67B0088028C /* block.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25494B2032D67B0088028C /* block.pb.swift */; };
 		9E289D561FDD306AC6C2400A /* Pods_IrohaSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C90C050E6D4EA8A66E4045 /* Pods_IrohaSwiftTests.framework */; };
 		E076BA7F7379131D303F104E /* Pods_IrohaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B1131B6273A1A0A1850B9B /* Pods_IrohaSwift.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +42,12 @@
 		6D2549372032CC830088028C /* IrohaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaSwiftTests.swift; sourceTree = "<group>"; };
 		6D2549392032CC830088028C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2549432032CD720088028C /* IrohaSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaSwift.swift; sourceTree = "<group>"; };
+		6D2549462032D67A0088028C /* commands.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = commands.pb.swift; path = "iroha-ios-schema/commands.pb.swift"; sourceTree = SOURCE_ROOT; };
+		6D2549472032D67A0088028C /* primitive.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = primitive.pb.swift; path = "iroha-ios-schema/primitive.pb.swift"; sourceTree = SOURCE_ROOT; };
+		6D2549482032D67A0088028C /* endpoint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = endpoint.pb.swift; path = "iroha-ios-schema/endpoint.pb.swift"; sourceTree = SOURCE_ROOT; };
+		6D2549492032D67B0088028C /* responses.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = responses.pb.swift; path = "iroha-ios-schema/responses.pb.swift"; sourceTree = SOURCE_ROOT; };
+		6D25494A2032D67B0088028C /* queries.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = queries.pb.swift; path = "iroha-ios-schema/queries.pb.swift"; sourceTree = SOURCE_ROOT; };
+		6D25494B2032D67B0088028C /* block.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = block.pb.swift; path = "iroha-ios-schema/block.pb.swift"; sourceTree = SOURCE_ROOT; };
 		70E91822C4B5E89F8A16B345 /* Pods-IrohaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IrohaSwift/Pods-IrohaSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		94C90C050E6D4EA8A66E4045 /* Pods_IrohaSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrohaSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE924351B312AC8F7B3371AA /* Pods-IrohaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-IrohaSwift/Pods-IrohaSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +117,7 @@
 		6D25492B2032CC830088028C /* IrohaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6D2549452032D6640088028C /* pb */,
 				6D25492C2032CC830088028C /* IrohaSwift.h */,
 				6D25492D2032CC830088028C /* Info.plist */,
 				6D2549432032CD720088028C /* IrohaSwift.swift */,
@@ -119,6 +132,19 @@
 				6D2549392032CC830088028C /* Info.plist */,
 			);
 			path = IrohaSwiftTests;
+			sourceTree = "<group>";
+		};
+		6D2549452032D6640088028C /* pb */ = {
+			isa = PBXGroup;
+			children = (
+				6D25494B2032D67B0088028C /* block.pb.swift */,
+				6D2549462032D67A0088028C /* commands.pb.swift */,
+				6D2549482032D67A0088028C /* endpoint.pb.swift */,
+				6D2549472032D67A0088028C /* primitive.pb.swift */,
+				6D25494A2032D67B0088028C /* queries.pb.swift */,
+				6D2549492032D67B0088028C /* responses.pb.swift */,
+			);
+			path = pb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +356,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D25494F2032D67B0088028C /* responses.pb.swift in Sources */,
+				6D25494C2032D67B0088028C /* commands.pb.swift in Sources */,
+				6D25494E2032D67B0088028C /* endpoint.pb.swift in Sources */,
 				6D2549442032CD720088028C /* IrohaSwift.swift in Sources */,
+				6D2549512032D67B0088028C /* block.pb.swift in Sources */,
+				6D25494D2032D67B0088028C /* primitive.pb.swift in Sources */,
+				6D2549502032D67B0088028C /* queries.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
