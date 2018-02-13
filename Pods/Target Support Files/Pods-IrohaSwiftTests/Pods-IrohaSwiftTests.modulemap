@@ -1,0 +1,6 @@
+framework module Pods_IrohaSwiftTests {
+  umbrella header "Pods-IrohaSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

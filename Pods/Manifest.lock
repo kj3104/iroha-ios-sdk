@@ -1,0 +1,30 @@
+PODS:
+  - BigInt (3.0.1):
+    - SipHash (~> 1.2)
+  - CryptoSwift (0.8.1)
+  - ed25519swift (1.1.4):
+    - BigInt (~> 3)
+    - CryptoSwift
+  - SipHash (1.2.0)
+
+DEPENDENCIES:
+  - ed25519swift (from `https://github.com/luca3104/ed25519swift.git`)
+
+EXTERNAL SOURCES:
+  ed25519swift:
+    :git: https://github.com/luca3104/ed25519swift.git
+
+CHECKOUT OPTIONS:
+  ed25519swift:
+    :commit: fa1b77f2d475eb8396b4eb17e4a2fbc7d792fed5
+    :git: https://github.com/luca3104/ed25519swift.git
+
+SPEC CHECKSUMS:
+  BigInt: 8e8a52161c745cd3ab78e3dc346a9fbee51e6cf6
+  CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
+  ed25519swift: b852a3e42240f5b3636d62649d458624bdb665bd
+  SipHash: c6e9e43e9c531b5bc6602545130c26194a6d31ce
+
+PODFILE CHECKSUM: 52d8aa900477f413d170e623e5f1369cbb0166ca
+
+COCOAPODS: 1.4.0

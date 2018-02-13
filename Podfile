@@ -6,13 +6,12 @@ target 'IrohaSwift' do
   use_frameworks!
 
   # Pods for IrohaSwift
+  pod 'ed25519swift', :git => 'https://github.com/luca3104/ed25519swift.git'
 
-end
 
-target 'Pods-IrohaSwift_Tests' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Pods-IrohaSwift_Tests
+  target 'IrohaSwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
